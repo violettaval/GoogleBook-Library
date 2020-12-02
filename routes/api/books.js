@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const Book = require("./bookModel");
+const Book = require("./../../models");
 
 router.get("/api/books", (req, res) => {
   Book.find({})
